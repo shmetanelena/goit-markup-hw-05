@@ -169,22 +169,23 @@ body {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  fill: var(--text-color);
+  fill: currentColor; /*значение цвета родителя, 
+  те как в ссылке с email даже при ховере и фокусе */
 }
 
 .tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  fill: var(--text-color);
+  fill: currentColor;
 }
-.header-contact-link:hover .mail,
+/* .header-contact-link:hover .mail,
 .header-contact-link:focus .mail,
 .header-contact-link:hover .tel,
 .header-contact-link:focus .tel{
   color: var(--accent-color);
   fill: var(--accent-color);
-}
+} */
 /*======MAIN=====*/
 /*Hero*/
 .hero {
@@ -332,8 +333,36 @@ body {
   text-align: center;
   color: var(--title-color);
 }
-.work-item:not(:last-child) {
+.work-item {
+  width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
+
+  position: relative;
+}
+.action-item:nth-child(3n) {
+  margin: 0;
+}
+/* .work-item:not(:last-child) {
+  margin-right: 30px;
+} */
+.work-kind-title h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+.work-kind-title {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
 }
 /*Наша команда*/
 .employees {
@@ -418,6 +447,8 @@ body {
   height: 20px;
   fill: var(--icon);
 }
+/* ОДНОВРЕМЕННО при наведении
+Меняет социальную сеть и кружочек ссылки  */
 .social-icon-link:hover .icon-social,
 .social-icon-link:focus .icon-social {
   fill: var(--main-title-color);
