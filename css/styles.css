@@ -781,6 +781,7 @@ flex-элементов —  в одну строку или в нескольк
   justify-content: center;
   align-items: center;
   position: absolute;
+  padding: 0;
   right: 8px;
   top: 8px;
   width: 30px;
