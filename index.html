@@ -73,7 +73,8 @@
   
 
     <main>
-      <!-- Эффективные решения для вашего бизнеса-->
+      <!-- ===HERO==
+        Эффективные решения для вашего бизнеса-->
      
       <section class="hero">
        <div class="conteiner">
@@ -81,7 +82,9 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="hero-button" type="button">Заказать услугу</button>
+        <button class="hero-button" type="button" data-modal-open>
+          Заказать услугу
+        </button>
       </div>
       </section>
      
@@ -496,12 +499,12 @@
       </div>
     </footer>
     <!-- Всплывающее окно -->
-    <div class="backdrop is-hidden" data-modal"">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>
           <svg class="close-icon">
             <use href="./images/symboldefs.svg#close"></use>
-          </svg> 
+          </svg>
         </button>
       </div>
     </div>
