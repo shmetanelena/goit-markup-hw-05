@@ -773,8 +773,8 @@ flex-элементов —  в одну строку или в нескольк
   transform: translate(-50%, -50%) scale(0.5);
 }
 .close-icon {
-  width: 11px;
-  height: 11px;
+  width: 18px;
+  height: 18px;
 }
 .close-button {
   display: flex;
